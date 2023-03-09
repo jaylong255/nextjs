@@ -1,3 +1,23 @@
+/* @value background: url('/images/further-4.jpg');
+ */
+
+.background {
+  /* The image used */
+  background-image: url('/images/further-4.jpg');
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -5,6 +25,13 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+
+  background-image: url('/images/further.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
 }
 
 .description {
@@ -16,6 +43,10 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  /* background: url('/images/further.jpg');
+  background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px); */
 }
 
 .description a {
