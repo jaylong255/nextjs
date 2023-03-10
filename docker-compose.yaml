@@ -1,0 +1,20 @@
+version: "3.5"
+services:
+
+  nextjs:
+    container_name: nextjs
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      target: nextjs
+    working_dir: /app
+    volumes:
+      - .:/app
+    networks:
+      - myappyo
+    ports:
+      - 3000:3000
+
+networks:
+  myappyo:
+    driver: bridge
