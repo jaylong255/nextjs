@@ -15,9 +15,18 @@ docker-compose build
 ```
 
 Next, run the development server:
-
 ```bash
-docker compose run nextjs npm run dev
+docker compose up -d
+```
+
+Installing a package:
+```bash
+docker compose run nextjs npm install mypackage/nameyo
+```
+
+Finally, when you finish shut it down:
+```bash
+docker compose stop
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
