@@ -21,6 +21,30 @@ I'll be following the docs found [here](https://developer.hashicorp.com/terrafor
     - Go to the tokens page.
     - Click `Create Token`.
     - Give the token a description and then copy it to your clipboard.
+
+### Running Terraform Commands with Cloud Configuration on mac
+
+```bash
+# Log into Terraform Cloud
+terraform login
+
+# Copy the token, paste in the response and hit enter
+
+# Run the setup (The following instructions appear on first attempt)
+
+# Clone the setup repo
+git clone https://github.com/hashicorp/tfc-getting-started.git
+
+# Change into the setup directory
+cd tfc-getting-started
+
+# Make sure jq is installed
+brew install jq
+
+# Run the script
+scripts/setup.sh
+```
+
 ### GCP
 (NOT TODAY, YO)
 
