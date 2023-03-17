@@ -1,3 +1,13 @@
+# TODO: All of the code in this file will need to be moved to a module that can be reused for other environments and 
+# projects. Any time we want to deploy a new environment, we should be able to do so by using the code below.
+# The call will look something like this for reference:
+# module "static_website" {
+#   source = "git::github.com/jaylong255/terraform-modules.git?ref=v2.0.0"
+#   stack = "assets"
+#   env = "dev"
+# }
+
+
 resource "aws_s3_bucket" "assets" {
   bucket = "${var.stack}-assets-${var.env}"
 
