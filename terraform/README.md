@@ -21,7 +21,6 @@ I'll be following the docs found [here](https://developer.hashicorp.com/terrafor
     - Go to the tokens page.
     - Click `Create Token`.
     - Give the token a description and then copy it to your clipboard.
-
 ### GCP
 (NOT TODAY, YO)
 
