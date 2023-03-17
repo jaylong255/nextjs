@@ -29,6 +29,11 @@ Finally, when you finish shut it down:
 docker compose stop
 ```
 
+```bash
+# Deploying assets to a bucket
+aws s3 sync ./out/ s3://my-assets-bucket --delete
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
